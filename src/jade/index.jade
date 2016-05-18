@@ -15,6 +15,22 @@ html(ng-app="myApp")
     script(src="../js/angular.js")
     script(src="../js/myjs.js")
 
+    // Add fancyBox main JS and CSS files
+    script(type='text/javascript', src='../js/source/jquery.fancybox.js?v=2.1.5')
+    link(rel='stylesheet', type='text/css', href='../js/source/jquery.fancybox.css?v=2.1.5', media='screen')
+
+    // Add Button helper (this is optional)
+    link(rel='stylesheet', type='text/css', href='../js/source/helpers/jquery.fancybox-buttons.css?v=1.0.5')
+    script(type='text/javascript', src='../js/source/helpers/jquery.fancybox-buttons.js?v=1.0.5')
+
+    script.
+      $(document).ready(function() {
+        $(".fancybox").fancybox({
+          openEffect  : 'none',
+          closeEffect : 'none'
+        });
+      });
+
   body
     .wrapper
       include ./_includes/Navigation.jade

@@ -14,6 +14,21 @@
     <script src="../js/angular.min.js"></script>
     <script src="../js/angular.js"></script>
     <script src="../js/myjs.js"></script>
+    <!-- Add fancyBox main JS and CSS files-->
+    <script type="text/javascript" src="../js/source/jquery.fancybox.js?v=2.1.5"></script>
+    <link rel="stylesheet" type="text/css" href="../js/source/jquery.fancybox.css?v=2.1.5" media="screen">
+    <!-- Add Button helper (this is optional)-->
+    <link rel="stylesheet" type="text/css" href="../js/source/helpers/jquery.fancybox-buttons.css?v=1.0.5">
+    <script type="text/javascript" src="../js/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script>
+      $(document).ready(function() {
+        $(".fancybox").fancybox({
+          openEffect  : 'none',
+          closeEffect : 'none'
+        });
+      });
+      
+    </script>
   </head>
   <body>
     <div class="wrapper">
@@ -37,28 +52,31 @@
           <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><span class="sign"></span>
         </div>
       </div>
+      
       <div id="portfolio" class="portfolio">
         <h2>Portfolio</h2>
         <div class="pf-items">
-          <div class="cell"><a href="#porfolio-item"><img src="../images/jw-portfolio-01.jpg"></a></div>
-          <div class="cell"><a href="#porfolio-item"><img src="../images/jw-portfolio-02.jpg"></a></div>
-          <div class="cell"><a href="#porfolio-item"><img src="../images/jw-portfolio-03.jpg"></a></div>
-          <div class="cell"><a href="#porfolio-item"><img src="../images/jw-portfolio-04.jpg"></a></div>
-          <div class="cell"><a href="#porfolio-item"><img src="../images/jw-portfolio-05.jpg"></a></div>
-          <div class="cell"><a href="#porfolio-item"><img src="../images/jw-portfolio-06.jpg"></a></div>
-          <div class="cell"><a href="#porfolio-item"><img src="../images/jw-portfolio-07.jpg"></a></div>
-          <div class="cell"><a href="#porfolio-item"><img src="../images/jw-portfolio-08.jpg"></a></div>
-          <div class="cell"><a href="#porfolio-item"><img src="../images/jw-portfolio-09.jpg"></a></div>
-          <div class="cell"><a href="#porfolio-item"><img src="../images/jw-portfolio-010.jpg"></a></div>
+          <div class="cell"><a rel="gallery1" href="../images/jw-portfolio-01.jpg" title="Image" class="fancybox"><img src="../images/jw-portfolio-01.jpg" alt="image"></a></div>
+          <div class="cell"><a rel="gallery1" href="../images/jw-portfolio-02.jpg" title="Image" class="fancybox"><img src="../images/jw-portfolio-02.jpg" alt="image"></a></div>
+          <div class="cell"><a rel="gallery1" href="../images/jw-portfolio-03.jpg" title="Image" class="fancybox"><img src="../images/jw-portfolio-03.jpg" alt="image"></a></div>
+          <div class="cell"><a rel="gallery1" href="../images/jw-portfolio-04.jpg" title="Image" class="fancybox"><img src="../images/jw-portfolio-04.jpg" alt="image"></a></div>
+          <div class="cell"><a rel="gallery1" href="../images/jw-portfolio-05.jpg" title="Image" class="fancybox"><img src="../images/jw-portfolio-05.jpg" alt="image"></a></div>
+          <div class="cell"><a rel="gallery1" href="../images/jw-portfolio-06.jpg" title="Image" class="fancybox"><img src="../images/jw-portfolio-06.jpg" alt="image"></a></div>
+          <div class="cell"><a rel="gallery1" href="../images/jw-portfolio-07.jpg" title="Image" class="fancybox"><img src="../images/jw-portfolio-07.jpg" alt="image"></a></div>
+          <div class="cell"><a rel="gallery1" href="../images/jw-portfolio-08.jpg" title="Image" class="fancybox"><img src="../images/jw-portfolio-08.jpg" alt="image"></a></div>
+          <div class="cell"><a rel="gallery1" href="../images/jw-portfolio-09.jpg" title="Image" class="fancybox"><img src="../images/jw-portfolio-09.jpg" alt="image"></a></div>
+          <div class="cell"><a rel="gallery1" href="../images/jw-portfolio-010.jpg" title="Image" class="fancybox"><img src="../images/jw-portfolio-010.jpg" alt="image"></a></div>
         </div>
       </div>
       <footer id="contact">
-        <p class="contact">Mail:</p>
-        <h4>Jason@wood.com</h4>
-        <p class="contact">Phone:</p>
-        <h4>+44 212 432 444</h4>
-        <p class="contact">Social media:</p>
-        <p class="social-links"><a href="#facebook"><span class="fb fa fa-facebook"> </span></a><a href="#twitter"><span class="tw fa fa-twitter"></span></a><a href="#instagram"><span class="in fa fa-instagram"></span></a></p>
+        <div class="contact-info">
+          <p class="contact">Mail:</p>
+          <h4>Jason@wood.com</h4>
+          <p class="contact">Phone:</p>
+          <h4>+44 212 432 444</h4>
+          <p class="contact">Social media:</p>
+          <p class="social-links"><a href="#facebook"><span class="fb fa fa-facebook"> </span></a><a href="#twitter"><span class="tw fa fa-twitter"></span></a><a href="#instagram"><span class="in fa fa-instagram"></span></a></p>
+        </div>
         <div class="divider"></div>
         <p class="design-by">DESIGNED by Pawel szymankiewicz</p>
       </footer>

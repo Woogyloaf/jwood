@@ -1,0 +1,29 @@
+
+menu-cross
+
+button(class="lines-button arrow arrow-up" type="button" role="button" aria-label="Toggle Navigation")
+	span(class="lines")
+	a(class="navicon-button x")
+		.navicon
+		
+//- .nav-display Hello Navigation
+button.nav-btn
+	span toggle menu
+
+
+input(type="text" ng-model="search" Placeholder="Search")
+
+
+div(ng-controller="myCtrl as dirList")
+	ul
+		li(ng-repeat="item in dirList.list | filter: search")
+			{{item.name}} - {{item.age}} {{item.url}}
+			a(href="{{item.url}}")
+				img(ng-src="{{item.img}}")
+
+	form(ng-submit="dirList.addPerson()")
+		input(type="text" placeholder="Name" ng-model="dirList.name")
+		input(type="text" placeholder="Age" ng-model="dirList.age")
+		input(class="c-blue" type="submit" value="Submit")
+
+p(style="font-size:30px")	 &yen;&#8381;;

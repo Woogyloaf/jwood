@@ -18,6 +18,17 @@ media(breakpoints)
   @media conditions
     {block}
 
+
+clearfix()
+  zoom 1
+  &:after
+  &:before
+    content ""
+    display table
+  &:after
+    clear both
+
+
 // Effects
 transition-all($time = 0.5s)
   -webkit-transition: all $time ease-in-out

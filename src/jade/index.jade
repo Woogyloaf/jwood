@@ -3,7 +3,7 @@ html(ng-app="myApp")
   head
     meta(charset='utf-8')
     meta(http-equiv='x-ua-compatible', content='ie=edge')
-    title
+    title JWood
     meta(name='description', content='')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='apple-touch-icon', href='apple-touch-icon.png')
@@ -11,17 +11,11 @@ html(ng-app="myApp")
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
     link(rel='stylesheet', href='../css/style.css')
     script(src="//code.jquery.com/jquery-2.2.3.min.js")
-    script(src="../js/angular.min.js")
-    script(src="../js/angular.js")
-    script(src="../js/myjs.js")
 
     // Add fancyBox main JS and CSS files
     script(type='text/javascript', src='../js/source/jquery.fancybox.js?v=2.1.5')
     link(rel='stylesheet', type='text/css', href='../js/source/jquery.fancybox.css?v=2.1.5', media='screen')
-
-    // Add Button helper (this is optional)
-    link(rel='stylesheet', type='text/css', href='../js/source/helpers/jquery.fancybox-buttons.css?v=1.0.5')
-    script(type='text/javascript', src='../js/source/helpers/jquery.fancybox-buttons.js?v=1.0.5')
+    script(src="../js/main.js")
 
     script.
       $(document).ready(function() {
@@ -33,14 +27,10 @@ html(ng-app="myApp")
 
   body
     .wrapper
-      include ./_includes/Navigation.jade
-      include ./_includes/About-me.jade
-      include ./_includes/Portfolio.jade
-      include ./_includes/Contact.jade
-
-      //- include ./_includes/HelloJade.jade
-      //- include ./_includes/Angular.jade
-      //- include ./_includes/Index.jade
+      include ./_includes/Navigation
+      include ./_includes/About-me
+      include ./_includes/Portfolio
+      include ./_includes/Contact
       .helper
       #app
       //- script(src='../js/main.js')
